@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header style="display:flex;justify-content:space-around;" style="background-color: rgb(196, 125, 18);">
+      <center><img src="https://media.licdn.com/dms/image/D4E0BAQEENLwyDdDx6A/company-logo_200_200/0/1707255460963/riwi_io_logo?e=2147483647&v=beta&t=wyA5kZ0U0F8GgIVTUeH3QwjS-tHFD2LPSQMpqZF-vBk">
+      <h1 align="center">inicia tu proceso de formacion en riwi</h1>
+    </header>
+    <main>
+      <form
+        action="/pages/server.html"method="get"enctype="multipart/form-data">
+        <fieldset style="background-color: yellow;">
+          <legend>informacion basica de el usuario</legend>
+          <div>
+            <label for="imagen" required>inserta una foto de perfil:</label>
+            <input type="file" name="imagen" id="imagen" accept="image/*" />
+          </div>
+          <div>
+            <label for="nombre">nombre:</label>
+            <input type="text" name="nombre" id="nombre" />
+          </div>
+          <div>
+            <label for="apellido">apellido:</label>
+            <input type="text" name="apellido" id="apellido" />
+          </div>
+          <div>
+            <label for="correo">correo:</label>
+            <input type="mail" name="correo" id="correo" />
+          </div>
+          <div>
+            <label for="contraseña">contraseña:</label>
+            <input type="password" name="contraseña" id="contraseña" />
+            <label for="confirmacion">confirmacion</label>
+            <input
+              type="password"
+              required="value=contraseña"
+              id="confirmacion"
+              name="confirmacion"
+            />
+          </div>
+          <div>
+            <label for="residencia">pais de residencia:</label>
+            <input
+              list="lista-paises"
+              name="pais_de_residencia"
+              id="residencia"
+            />
+            <div>
+              <datalist list="lista-paises" id="lista-paises">
+                <option value="argentina">argentina</option>
+                <option value="australia">australia</option>
+                <option value="brasil">brasil</option>
+                <option value="canada">canada</option>
+                <option value="china">china</option>
+                <option value="francia">francia</option>
+                <option value="alemania">alemania</option>
+                <option value="india">india</option>
+                <option value="italia">italia</option>
+                <option value="japon">japon</option>
+                <option value="mexico">mexico</option>
+                <option value="rusia">rusia</option>
+                <option value="sudafrica">sudafrica</option>
+              </datalist>
+            </div>
+          </div>
+          <div>
+            <label for="numero">numero:</label>
+            <input type="tel" name="numero" id="numero" />
+          </div>
+          <div>
+            <label for="nacimiento">fecha de nacimiento:</label>
+            <input type="date" name="fecha de nacimiento" id="nacimiento" />
+          </div>
+          <div>
+            <label for="color">color favorito: </label>
+            <input type="color" name="color" id="color" />
+          </div>
+        </fieldset>
+       
+
+        <fieldset style="background-color: rgb(160, 160, 216);">
+          <legend>detalles academicos</legend>
+
+          <div>
+            <label for="niveleducativo">seleccione su nivel educativo:</label>
+            <input list="educacion" name="niveleducativo" id="niveleducativo" />
+          </div>
+          <div>
+            <datalist id="educacion">
+              <option value="primaria">primaria</option>
+              <option value="secundaria">secundaria</option>
+              <option value="tecnica">tecnica</option>
+              <option value="tecnologica">tecnologa</option>
+              <option value="postgrado">postgrado</option>
+              <option value="maestria">maestria</option>
+              <option value="doctorado">doctorado</option>
+            </datalist>
+          </div>
+          <div>
+            <label for="inicio de estudios:">cuando inicio el estudio:</label>
+            <input type="date"name="inicio de estudios"id="inicio de estudios"/>
+          </div>
+        </fieldset>
+        <fieldset style="background-color: rgb(231, 124, 124);">
+          <legend>experiencia laboral</legend>
+          <div>
+            <label for="descripcion de experiencia"><center>describa sus experiencias laborales</center></label>
+            <textarea name="descripcion de experiencia" id="descripcion de experiencia" cols="90" rows="10"></textarea>
+          </div>
+          <div>
+            <label for="adjuntar hoja de vida">adjuntar hoja de vida</label>
+            <input type="file" name="adjuntar hoja de vida" id="hoja de vida " required>
+          </div>
+        </fieldset>
+        <button type="reset">limpiar el formulario</button>
+        <button type="submit">guardar y enviar respuestas</button>
+      </form>
+    </main><br><br><br><br>
+    <footer>
+      <p>ubicacion:</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.337858174151!2d-75.58618982407846!3d6.219100993768888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44293f0e114eef%3A0x99610cdd44c7c081!2sRiwi%20-%20Be%20a%20Coder!5e0!3m2!1ses-419!2sco!4v1710937771953!5m2!1ses-419!2sco" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+  </body>
+  
+</html>

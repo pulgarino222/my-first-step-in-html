@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <header>
+        <center>
+            <h1>veterinaria riwi</h1>
+        </center>
+    </header>
+    <main>
+        <form action="./pages/server.html" method="get" enctype="multipart/form-data">
+            <fieldset>
+                <legend>datos basicos de la mascota</legend>
+
+                    <div>
+                        <label for="nombre-completo">nombre completo:</label>
+                        <input type="text" name="nombre-completo" placeholder="nombre completo" id="nombre-completo">
+                    </div>
+                    <div>
+                        <label for="especie">especie:</label>
+                        <!-- <input type="text" name="especie" placeholder="especie" id="especie"> -->
+                        <select name="especie" id="especie">
+                            <option disabled selected></option>
+                            <option value="canina">canina</option>
+                            <option value="felina">felina</option>
+                            <option value="reptil">reptil</option>
+                            <option value="bobina">bobina</option>
+                        </select>
+                        
+
+                    </div>
+                    <div>
+                    <label for="edad">edad: </label>
+                    <input type="date" name="edad" id="edad" min="18" max="78">
+                    </div>
+                    <div>
+                        <label for="edad">fecha de nacimiento </label>
+                    <input type="number" name="edad" id="edad" min="18" max="78">
+
+                    </div>
+                    <div>
+                        <label for="edad">genero: </label>
+                        <br>
+
+                        <sapan>
+                            macho:<input type="radio" name="radio" id="edad" value="macho">
+                            hembra:<input type="radio" name="radio" id="edad" value="hembra">
+                        </sapan>
+                    </div>
+                    <div>
+                        <label for="edad">peculiaridades: </label>
+                        <br>
+
+                        <sapan>
+                            manchas:<input type="checkbox" name="radio" id="edad" value="macho">
+                            orejas:<input type="checkbox" name="radio" id="edad" value="hembra">
+                        </sapan>
+                    </div>
+                    <div>
+                        <label for="edad">coolor: </label>
+                        <input type="color" name="color" id="edad">
+                    </div>
+                    
+                
+            </fieldset>
+            <fieldset>
+                <legend>datos de propietario:</legend>
+                <span>direccion</span>
+                    <div>
+                        <label for="pais">pais:</label>
+                        <input list="lista-paises" name="pais"  id="pais">
+                    </div>
+                    <datalist id="lista-paises">
+                        <option value="argentina">argentina</option>
+                        <option value="australia">australia</option>
+                        <option value="brasil">brasil</option>
+                        <option value="canada">canada</option>
+                        <option value="china">china</option>
+                        <option value="francia">francia</option>
+                        <option value="alemania">alemania</option>
+                        <option value="india">india</option>
+                        <option value="italia">italia</option>
+                        <option value="japon">japon</option>
+                        <option value="mexico">mexico</option>
+                        <option value="rusia">rusia</option>
+                        <option value="sudafrica">sudafrica</option>
+                    </datalist>
+
+                    <div>
+                        <label for="comentario">comentario</label>
+                        <!-- <input type="tex"name="comentario"  id="comentario"> -->
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10" maxlength="250"></textarea>
+                    </div>
+                    <div>
+                        <label for="tamaño">tamaño:</label>
+                        <input type="range" name="tamaño" id="tamaño" min="1" max="6">
+                    </div>
+                    <div>
+                        <label for="nombre">nombre:</label>
+                        <input type="text" name="tamaño" id="tamaño" min="1" max="6">
+                    </div>
+                    <div>
+                        <label for="foto">foto:</label>
+                        <input type="file" name="foto" id="foto" accept="image/*" required>
+                    </div>
+                    <div>
+                        <label for="contraseña">contraseña:</label>
+                        <input type="password" name="contraseña" id="contraseña" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" title="La contraseña debe contener al menos 8 caracteres, incluyendo al menos una letra, un número y un carácter especial (@ $ ! % * ? &)" required>
+                    </div>
+                    <div>
+                        <label for="correo">correo:</label>
+                        <input type="email" name="coorreo" id="correo" required>
+                    </div>
+                    <div>
+                        <label for="fotoonline">foto online:</label>
+                        <input type="url" name="foto" id="fotoonline">
+                    </div>
+
+
+                    
+            </fieldset>
+            <button type="reset">limpiar el formulario</button>
+            <button type="button">botton de ejemplo</button>
+            <button type="submit">enviar informacion></button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
